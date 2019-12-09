@@ -2,7 +2,7 @@
 
 
 
-for manpg in gnome-gmail ; do
+for manpg in viagee ; do
     (man -t $manpg|ps2pdf - $manpg.pdf);
     man -Thtml $manpg >$manpg.html;
 done

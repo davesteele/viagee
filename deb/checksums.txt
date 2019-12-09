@@ -1,127 +1,28 @@
 -----BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA512
+Hash: SHA256
 
 MD5Sum
-b834c1db31ad688cc17a57fce64f4c8a  gnome-gmail_1.8.3-1_all.deb
-812e717a6e373e62205d34bbfb8469c2  gnome-gmail_1.9-1_all.deb
-492d100958a527e9f9c4d30607fcc163  gnome-gmail_1.9-2_all.deb
-a084163a15e010ee992ba2974ff1f14e  gnome-gmail_1.9.1-1_all.deb
-1026dab61ba1838c83482a3046addf13  gnome-gmail_1.9.2-1_all.deb
-5c4a952500143dc718d40a3b3c9c336a  gnome-gmail_1.9.3-1_all.deb
-95c9b1f489ad9a97f3307618bc1176dc  gnome-gmail_1.9.4-1_all.deb
-1a7e419521f89ab6d118d2f4cdbfb7d8  gnome-gmail_1.9.5-1_all.deb
-ece586478856f47397888ea8f0318705  gnome-gmail_1.9.5-2_all.deb
-f67b1c993c379f3cde69068f7cf453b7  gnome-gmail_2.0-1_all.deb
-6b0f9ab26c75fe95b5e9e02b7141ae26  gnome-gmail_2.0.1-1_all.deb
-94c36e0c710fcbf5b4c7c821404f34d2  gnome-gmail_2.0.1-2_all.deb
-a31318351af98827fcf39855fab94900  gnome-gmail_2.1-1+ppa1_all.deb
-4317d4df2c5d8340fcf44bd65612ede1  gnome-gmail_2.1-1_all.deb
-440143bfff327cd31d38b016f321ba32  gnome-gmail_2.2-1+ppa1_all.deb
-6ed89a4fe1986027757242bfcb53b8a7  gnome-gmail_2.2-1_all.deb
-d7a363fae3d24d558ee3e0ec44ab4c4b  gnome-gmail_2.3-1+ppa1_all.deb
-9388e97892eeb0bae59019e294543f7c  gnome-gmail_2.3-1_all.deb
-ed5ce1a77267e6caa514c34b403e1d07  gnome-gmail_2.3.1-1_all.deb
-f906d42e710d87be37dbc1e3508f6ca9  gnome-gmail_2.3.1-2_all.deb
-40e6e59da9cc907d56095225d173162a  gnome-gmail_2.4.1-1_all.deb
-038d59319fdd3b864be9a060663f1e10  gnome-gmail_2.5-1_all.deb
-76c7e23df2d921c0cf4f3e97aed7f84d  gnome-gmail_2.5-2_all.deb
-cba51207365a4034de04166fcbb73e81  gnome-gmail_2.5.1-1_all.deb
-3a18bc8c5a7416720a1427122b04d103  gnome-gmail_2.5.2-1_all.deb
-526b5b422f3dc3c2bbc29c017e040200  gnome-gmail_2.5.3-1_all.deb
-b22de85d0aea24b3d45a769534cf1420  gnome-gmail_2.5.4-1_all.deb
-a5137c9ea37e636943369c48d0f50493  gnome-gmail_2.5.4-2_all.deb
-4e1c8aa8d4c5f73c61def9813091892a  gnome-gmail_2.5.4-3_all.deb
-5cc80102f8a621b9786d918a43ff2763  gnome-gmail_2.5.5-1_all.deb
-c9c94327887f0c057e2910c7c364d5e1  gnome-gmail_2.5.6-1_all.deb
-f9e3be17b25420d395fd31412a12bb76  gnome-gmail_2.6-1_all.deb
-0b30a139ee72d8bebbf5d601dc369251  gnome-gmail_2.6.1-1_all.deb
-e43ac4c4379be0631d9e8db379366de5  gnome-gmail_2.7-1_all.deb
+f629a6b30b7f789e75b062a6ba8e995c  viagee_3.0-1_all.deb
 
 SHA1
-3cc7a13b32e78bf71b6da761d3c3de01d5ec6f9c  gnome-gmail_1.8.3-1_all.deb
-b805552ac3a5ebf3453cfa0d85ca4aaefb3ecd2a  gnome-gmail_1.9-1_all.deb
-5dd9101716b5492d3bba19c16ff046bc51f96ac4  gnome-gmail_1.9-2_all.deb
-d0d153a870c90b9a3974b5deac408b760ea7c15b  gnome-gmail_1.9.1-1_all.deb
-e0f43335a5824495ae12ac1d0bd45dbae64074f4  gnome-gmail_1.9.2-1_all.deb
-7c3993f9d2767c927c559954ae967390ff994185  gnome-gmail_1.9.3-1_all.deb
-acf57641879a74ffe3401778eb1460c5f26e221d  gnome-gmail_1.9.4-1_all.deb
-ed02ca8138f486b3e5ceaa155a6a6fa157d36119  gnome-gmail_1.9.5-1_all.deb
-563cc455125aa2d2e098a8d6b5d26a58c2180291  gnome-gmail_1.9.5-2_all.deb
-3bd2329c7d0decf4495355d952cf0f1c8e224ba4  gnome-gmail_2.0-1_all.deb
-71df9988a5b73bb9836ecf172d87bb576b66228f  gnome-gmail_2.0.1-1_all.deb
-61f8a046a2c4f0399f50f0b6f1dd45c3455819e4  gnome-gmail_2.0.1-2_all.deb
-4426b1225d704922f5264a61b22861d5d54b6db6  gnome-gmail_2.1-1+ppa1_all.deb
-bf70492937e230603ec4d25f851c21f85da487ce  gnome-gmail_2.1-1_all.deb
-bea5cde8fc0340bef2302e0b3c8d79b6ef3f1636  gnome-gmail_2.2-1+ppa1_all.deb
-501b3fa13e0a5e6688a1f5d5215987cd9ef6b0d8  gnome-gmail_2.2-1_all.deb
-01d00523a9b48283afa224baee64e6840079ed74  gnome-gmail_2.3-1+ppa1_all.deb
-bd7a3d157e94da350dcb69d3edb0f5661019ae52  gnome-gmail_2.3-1_all.deb
-96e6546b4ac587d7988bb705be5f1c1e0eb5618e  gnome-gmail_2.3.1-1_all.deb
-e460a3156154059b2d64e8f6f43f75dc5ac13693  gnome-gmail_2.3.1-2_all.deb
-4a8fc2d7b441c173e74f8f91056b3eb51444d41a  gnome-gmail_2.4.1-1_all.deb
-fa38d3e6117e5772ab505ec8f93054de037970e5  gnome-gmail_2.5-1_all.deb
-589834a7d6ca7cae0de4258cebaf091602a3179c  gnome-gmail_2.5-2_all.deb
-50df4da6fc7031291232aa8dfedaff056ac2cf8d  gnome-gmail_2.5.1-1_all.deb
-084ed94c59a418821fcd85c2e25db373d10a1787  gnome-gmail_2.5.2-1_all.deb
-5f20540874aee848443a233a78a35f4619491528  gnome-gmail_2.5.3-1_all.deb
-2335385e1a9c2f0271d3614285d183c53377721c  gnome-gmail_2.5.4-1_all.deb
-88004b8fede33f42f0fbabb7a46be696d7a09f32  gnome-gmail_2.5.4-2_all.deb
-e3f1ec090c5f85fc51f0e20f6c68c3467579d2be  gnome-gmail_2.5.4-3_all.deb
-ae72e810842d9f3089c164a59817c1db228e1c7a  gnome-gmail_2.5.5-1_all.deb
-caf4e3a127e5bd3b84a14812d9a86e28500bdcd0  gnome-gmail_2.5.6-1_all.deb
-d4c7ffffb74f9804577f99055426c23b3862c8bc  gnome-gmail_2.6-1_all.deb
-c0e4000586fed345c570c4a823834d0e37309000  gnome-gmail_2.6.1-1_all.deb
-8d24fbfd6acd415d5373937c243e052f0481efa3  gnome-gmail_2.7-1_all.deb
+edfb021a21fa0a16e553a09b97f5a91006e89884  viagee_3.0-1_all.deb
 
 SHA256
-f51cfa7ab0cc35fd7450582d3a7c0bf6c6256736d8c627cc45af177eafdabf31  gnome-gmail_1.8.3-1_all.deb
-9ce45387a7c988776652f41c7eb3447cfbf18a286c3ec2ac38019cf8f3ae48d1  gnome-gmail_1.9-1_all.deb
-39a90a2dd9e64ac0e893bb71fd3dedc3cd8e0ad5bd6558b019ca1a0affa64e18  gnome-gmail_1.9-2_all.deb
-a2addee9d72f4a80a0c7771a311ceb0f216af433a10c790db2d3f28bfafceeb9  gnome-gmail_1.9.1-1_all.deb
-5671f60ed27ea9a0ea0933bab2e89dae51080ab56aa16ee342dce631285951a8  gnome-gmail_1.9.2-1_all.deb
-febc72b2a81ec385683a59f78edbcec77dfd1a925f0d7ff820b030ba78ea0a3e  gnome-gmail_1.9.3-1_all.deb
-20255d7d62e62400e47c73ef80f83ba552f2c1b897153c8569b979dec487472e  gnome-gmail_1.9.4-1_all.deb
-dcdcec3b63ae9999262abc485668db557fe07e757981d8ac7736ea7158b105b0  gnome-gmail_1.9.5-1_all.deb
-8a65d9f012cd6b99e6165ce2893af14449ea039ebf703e56bde398ca41395a35  gnome-gmail_1.9.5-2_all.deb
-0952ee001a6204fe9d89a28b0cafd9b3698735e017bd2d58382f3c6238ab0b15  gnome-gmail_2.0-1_all.deb
-2eaad0e0384c5b0eccc212cf8952838daa735d52ad089caf3acd22bd6ff25661  gnome-gmail_2.0.1-1_all.deb
-c29da3f6491300b123757c84f3c27c08bbfc1386d615360c1605c4f68ca8e1d6  gnome-gmail_2.0.1-2_all.deb
-23a4112c5bf1a51605b5c66f6de04cfbf930df9f9728bf701fd6a9621099297c  gnome-gmail_2.1-1+ppa1_all.deb
-55b05a770d903e54237c6f589ac2493f3973f451324b376ab46fc0be1a976d9e  gnome-gmail_2.1-1_all.deb
-b68f22b7179c7e236ce9d1c1d8e37295c80ec682deb2414530b0ff66f150f3da  gnome-gmail_2.2-1+ppa1_all.deb
-5eaba61e53614486490b27ea6dc5dbee04fd338ec2c404c4392d83887ca88e27  gnome-gmail_2.2-1_all.deb
-ed77e74c69f688ccaffc0229ff8a2a16ff2f525a50a100a4640f8980424ccb9d  gnome-gmail_2.3-1+ppa1_all.deb
-f07e2a7df3c01e686451861ba7515db94bf6075c216d10e85373ae0a7ca96c4d  gnome-gmail_2.3-1_all.deb
-0c3d95e2e1966e47f1f79cd08412112e061f82c8a97e043c8f6073d6dfa39989  gnome-gmail_2.3.1-1_all.deb
-835a1d09018c42f81c6647c03a4657ccdfad5991b86c01830293e0990c1403a4  gnome-gmail_2.3.1-2_all.deb
-c172823d12c9adbbbf2eb70f0a4a50871d2aa684abeccab6b75849e21a5d4109  gnome-gmail_2.4.1-1_all.deb
-78526164439dbe05e226dbe539a46fc933f884654cb04ff892ffdb7b2767b806  gnome-gmail_2.5-1_all.deb
-37f8c62a9d4e7c1f67ae50f0221296dc7291edac6d842700838d1c57abb1bafb  gnome-gmail_2.5-2_all.deb
-9fd63c2b0a06589d2eb4200c7270cb9f374666ac9e5f2a6e814c3c10d21e37b7  gnome-gmail_2.5.1-1_all.deb
-e152cbf31e463d947476d8f9648d9df56c3132dc97031d39be35ea667489c14f  gnome-gmail_2.5.2-1_all.deb
-ef36ee7fa23463f756835d92115972de163a8326091d7e108e9a2fac82cde994  gnome-gmail_2.5.3-1_all.deb
-1c868761b7444e474442cda79703d020ff4a692d497bd0b8fbfa5731ad9f4c6b  gnome-gmail_2.5.4-1_all.deb
-cab43fbc45b94d584888f32549b489d6cc4a53d4f7b8fb2903d0952bdeeb9165  gnome-gmail_2.5.4-2_all.deb
-e19de8025c80628044df5c6cde155ff5a1822169dfbb012b249307a9d27ceccd  gnome-gmail_2.5.4-3_all.deb
-eb4b95a83a997472ff3203712663ec80875d8cd465695e8a95990ab505637bbe  gnome-gmail_2.5.5-1_all.deb
-e22e3da222a680fdca25e93e3ac7ad504ff820b4692428f4080ce036a0a9a73f  gnome-gmail_2.5.6-1_all.deb
-983528f5453c8c980051d4d4b2711cd064c7beed3f2d620ef0e6941e26db2b9d  gnome-gmail_2.6-1_all.deb
-b8d7f112f9f73b6d91a7ad7ce17c04bbae9bc63234130bece38d5ed74dce25a7  gnome-gmail_2.6.1-1_all.deb
-9c37f1632079017410ad1264af4e74dfbcec359867d8af686ccd681650da3073  gnome-gmail_2.7-1_all.deb
+f78815a85dc89aaee74d12f797b4d1fa329f6ee1353407830c6a6564ab3df6a6  viagee_3.0-1_all.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEErg2/WpKlreSUgbpvijFx7zZhUM4FAl1eg28ACgkQijFx7zZh
-UM5uqQ//f3ueLyyZ39oYyaj8rRieyyQAGZ/kF1lcXg20akS4KbF+4ZSZWPWvxXWn
-S3Mq9N/hmq2wT660tY25zID6fIzbL9i6EDAnFvvRA0S3RIRLg4BblPcq1vMVHrAI
-90epi1vIqivFUhswuYJMRpXxTnWCVtZQwPFgdsVrgq87FaL0Wdzv4+m19eMN5SED
-xXTyg4AQMybJJvJLGAakCvjVlOBOb4Z1hah0EOz69t7nA1Ad15GO9C4jyR6GDA8S
-3wx91cqckjOHfo4dq0/OwxQLmht9NXnxe0pr7cnMAJcu/tiZcltd/tqF+JATKkXH
-eH43zYzjaL8KlMetJgn6/AMvrNka1NDunmrqhCXUDZl5iyRHgs+kLmNzzutWngMz
-dzOnw8ahJRV9M/yiODcU4v/gVhY28Tu17Rt1cEwlE9xM0XCvN08/kzpVcvl/Ut/C
-SN3x3iQrSQSMZajSdM9qNfNHobUTtiHNxKcnr6949v27z/1+QZnpjJTji+fcOozH
-8nCQ0UBlB2ev37jfl6aNu8eiYSJebUvOFjqTFi75St2QTNINAPWl5h23VKZyKscT
-jIVFjf/GFjH3/1vYVbfHDOUqaEL4XyF5T7WUzBK0eW4jSyce5PwCbEoJTxOV96mb
-JBVTlWXmn4EyNy/yjg6DDeIT3UdB8LspVrPbMhAdNqv8xNG0iqI=
-=15hg
+iQIzBAEBCAAdFiEEFsJFjKR5Lf0iLhKW539ua4FQpagFAl3uzbkACgkQ539ua4FQ
+paicjQ//WpKgvK4U8TU0YH6qd1PVSssMZwY6qF47UEmyvXT27k81qcGv0LfN0edl
+Ft07j3D1zEAvNQ20V0ksGGK1edR+Kzs2dDcWqFq5gO8nhhVb65Rb63YFyrwQYdqK
+PTEItwHUczIA4/XoSz/F1hqXV2K6fJLo72M75CsfrXisnUFNlvcIxKQRRrbHwIdW
+I99XFpRCR8OyZHlO3TyrrrnbNJekmhQzEu6l7yhov9u5SKLqzT8+NMsKkqLnRy8i
+yS8VFHcl+HunY0W5Ynh3hYYgO341ggS6JFDObk5aaMPXL5WqDvVy+3HkM1XDAATz
+1/NXwP43X+JC0Fm/3XoFh1tM2Sn3/ovDnG7THgWMzfjoyIBv/1qDL/D4qMeQ1/Ar
++ey0KAGOWNVn4Bc9hq1B1dLLnc+4YSV+YaKPnvB0WsLESYNxZoZM5tLbMqrDRl00
+sfvOgJsgoesp1mLPBO+oqg3vRcwNJa0ajqhEZ1ofT1EHIQOUZQ61EP9ZMkZrVSur
+WyqAYYZuUOi2eYriKUpFkp+jg9onB64UXpIemANYPOcXLWxG9eUdETDjJ078kdNB
+M26e9tZLyz+ZXs3Joqv66WkEBqBEhy8845YDOWVOeYsNGPqM6QBhnpMJtQaCwi7f
+qIzW3euwbE8Qvt1H8JkhtO3OIlSwoCW6iNCr/Y2ZQlcHPmq+lp4=
+=XUXH
 -----END PGP SIGNATURE-----

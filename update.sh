@@ -1,7 +1,7 @@
 #!/bin/sh
 
-cp ../build-area/gnome-gmail*deb deb/
-cp ../gnome-gmail*deb deb/
+cp ../build-area/viagee*deb deb/
+cp ../viagee*deb deb/
 
 cd deb
 echo MD5Sum >checksums.txt

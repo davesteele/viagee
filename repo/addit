@@ -1,7 +1,7 @@
 #!/bin/sh
 
-for repo in gnome-gmailppa ; do
-    for pkg in gnome-gmail ; do
+for repo in viagee ; do
+    for pkg in viagee ; do
         reprepro -Vb . --ignore=wrongdistribution includedeb $repo ../../$pkg\_*_all.deb
     done
 done

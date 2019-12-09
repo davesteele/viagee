@@ -1,6 +1,6 @@
-Origin: gnome-gmail
-Label: gnome-gmail
-Codename: gnome-gmailppa
+Origin: viagee
+Label: viagee
+Codename: viagee
 Architectures: amd64 i386 armhf armel
 Components: main
 Description: Apt repository for project cloudprint
