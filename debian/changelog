@@ -1,8 +1,8 @@
-viagee (3.0-1) UNRELEASED; urgency=medium
+viagee (3.0-1) unstable; urgency=medium
 
   * Name change
 
- -- David Steele <steele@debian.org>  Sun, 08 Dec 2019 22:40:26 -0500
+ -- David Steele <steele@debian.org>  Mon, 09 Dec 2019 21:13:35 -0500
 
 gnome-gmail (2.7-1) unstable; urgency=medium
 
