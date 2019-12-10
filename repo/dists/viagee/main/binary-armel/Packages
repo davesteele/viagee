@@ -10,10 +10,10 @@ Homepage: https://davesteele.github.io/gnome-gmail/
 Priority: optional
 Section: mail
 Filename: pool/main/v/viagee/viagee_3.0-1_all.deb
-Size: 40712
-SHA256: 583c6930cdd744f350f9cb04edef907bb8d46f40fc122c81d4a63a2af0800118
-SHA1: d87e8d174f624d0a11cc3a00157d139bea453c67
-MD5sum: 7d8474dffa186f3b51b107b57bb79329
+Size: 40704
+SHA256: 90cac71a3aaef431f8bba9e4fd17ec61c533c972bb544631541310bd52d10e2d
+SHA1: c6acf20a52872ad5cc0240150713149d5a0d326f
+MD5sum: 03c9abd0df5ad4cd23a370eb0df75487
 Description: support for Gmail as the preferred email application in GNOME
  Viagee integrates the Gmail web interface into the GNOME environment.
  Once installed, Gmail becomes a choice as the default Mail Reader in the GNOME
