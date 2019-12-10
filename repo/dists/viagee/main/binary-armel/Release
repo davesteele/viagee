@@ -1,5 +1,5 @@
 Component: main
-Origin: gnome-gmail
-Label: gnome-gmail
+Origin: viagee
+Label: viagee
 Architecture: armel
 Description: Apt repository for project cloudprint

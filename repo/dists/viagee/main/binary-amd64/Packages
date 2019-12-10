@@ -1,19 +1,21 @@
-Package: gnome-gmail
-Version: 2.7-1
+Package: viagee
+Version: 3.0-1
 Architecture: all
 Maintainer: David Steele <steele@debian.org>
-Installed-Size: 238
+Installed-Size: 228
 Depends: python3-six, python3:any, python3-gi, gir1.2-secret-1, gir1.2-gtk-3.0, gir1.2-notify-0.7, gir1.2-wnck-3.0
+Conflicts: gnome-gmail
+Replaces: gnome-gmail
 Homepage: https://davesteele.github.io/gnome-gmail/
 Priority: optional
 Section: mail
-Filename: pool/main/g/gnome-gmail/gnome-gmail_2.7-1_all.deb
-Size: 54392
-SHA256: 9c37f1632079017410ad1264af4e74dfbcec359867d8af686ccd681650da3073
-SHA1: 8d24fbfd6acd415d5373937c243e052f0481efa3
-MD5sum: e43ac4c4379be0631d9e8db379366de5
+Filename: pool/main/v/viagee/viagee_3.0-1_all.deb
+Size: 40712
+SHA256: 583c6930cdd744f350f9cb04edef907bb8d46f40fc122c81d4a63a2af0800118
+SHA1: d87e8d174f624d0a11cc3a00157d139bea453c67
+MD5sum: 7d8474dffa186f3b51b107b57bb79329
 Description: support for Gmail as the preferred email application in GNOME
- GNOME Gmail integrates the Gmail web interface into the GNOME environment.
+ Viagee integrates the Gmail web interface into the GNOME environment.
  Once installed, Gmail becomes a choice as the default Mail Reader in the GNOME
  Preferred Applications administration application. When selected, a Gmail web
  page will be used whenever an email service is requested.
