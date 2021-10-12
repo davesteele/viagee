@@ -20,15 +20,24 @@
 
         <p class="view"><a href="https://github.com/davesteele/viagee">View the Project on GitHub <small>davesteele/viagee</small></a></p>
 
-
       </header>
       <section>
       <a href="index.html">back</a>
         <h3>Viagee Privacy Policy.</h3>
-	Viagee's use and transfer to any other app of information received from
-	Google APIs will adhere to
-	<a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>,
-	including the Limited Use requirements.
+	Viagee requests the Gmail "compose" permissions. It uses this to create Draft messages in the user's Gmail account,
+	based on email "send" requests
+	by the user from the local desktop or command line, and, optionally, to send those messages to the specified recipient. In
+	other cases, a link is determined and opened to view the composed email on the user's browser.
+	<p>
+	<p>
+
+	To accomplish this, Viagee stores tokens required to authenticate against the Gmail API. These tokens are stored in
+	the GNOME Keyring.
+
+
+	It also stores the last-used sender email address, to offer as a default for future use.
+	<p>
+	No other personal information is stored or shared, nor is the identified information used or shared beyond what is described here.
 
         
       </section>
