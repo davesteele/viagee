@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import pytest
+import re
 from six.moves import urllib
 
 import viagee
 
 
 baseMailtoURL = "mailto:joe?body="
+BASEMailtoURL = "mailto:joe?BODY="
 
 testCaseStrings = [
     ("x", "x"),
@@ -83,9 +85,13 @@ def get_gmapi(input):
         return gmapi
 
 
+@pytest.mark.parametrize("bodycaps", [False, True])
 @pytest.mark.parametrize("body, result", testCaseStrings)
-def test_needs_api_yes(body, result):
-    gmapi = get_gmapi(baseMailtoURL + body)
+def test_needs_api_yes(bodycaps, body, result):
+    if bodycaps:
+        gmapi = get_gmapi(BASEMailtoURL + body)
+    else:
+        gmapi = get_gmapi(baseMailtoURL + body)
 
     assert gmapi.needs_api() is True
 
