@@ -25,8 +25,8 @@ Depends: ${misc:Depends},
          libnotify (>= 0.8),
 Provides: exec<viagee>,
           mime<x-scheme-handler/mailto>
-Replaces: gnome-gmail
-Conflicts: gnome-gmail
+Replaces: gnome-gmail (<< 3.0)
+Breaks: gnome-gmail (<<3.0)
 Description: support for Gmail as the preferred email application in GNOME
  Viagee integrates the Gmail web interface into the GNOME environment.
  Once installed, Gmail becomes a choice as the default Mail Reader in the GNOME
@@ -34,3 +34,14 @@ Description: support for Gmail as the preferred email application in GNOME
  page will be used whenever an email service is requested.
  .
  Logout to complete the configuration.
+
+Package: gnome-gmail
+Depends: viagee, ${misc:Depends}
+Architecture: all
+Priority: optional
+Section: oldlibs
+Description: transitional package
+ This is a transitional package, supporting the transition to viagee. It can be
+ removed.
+
+
