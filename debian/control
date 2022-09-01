@@ -2,12 +2,13 @@ Source: viagee
 Maintainer: David Steele <steele@debian.org>
 Section: mail
 Priority: optional
-Build-Depends: debhelper (>= 10),
-               dh-python,
+Build-Depends: dh-python,
                intltool,
                python3,
-               python3-distutils,
+               python3-setuptools,
+               debhelper-compat (= 13),
 Standards-Version: 4.1.2
+Rules-Requires-Root: no
 Vcs-Browser: https://github.com/davesteele/gnome-gmail/tree/debian
 Vcs-Git: https://github.com/davesteele/gnome-gmail.git -b debian
 Homepage: https://davesteele.github.io/gnome-gmail/
@@ -21,6 +22,7 @@ Depends: ${misc:Depends},
          gir1.2-gtk-3.0,
          gir1.2-notify-0.7,
          gir1.2-wnck-3.0,
+         libnotify (>= 0.8),
 Provides: exec<viagee>,
           mime<x-scheme-handler/mailto>
 Replaces: gnome-gmail

@@ -4,6 +4,53 @@ viagee (3.0-1) unstable; urgency=medium
 
  -- David Steele <steele@debian.org>  Mon, 09 Dec 2019 21:13:35 -0500
 
+gnome-gmail (2.10-1) unstable; urgency=medium
+
+  * Update libnotify required version.
+  * Depracate "oob" OAuth2 authentication.
+
+ -- David Steele <steele@debian.org>  Mon, 18 Jul 2022 11:06:26 -0400
+
+gnome-gmail (2.9-3) unstable; urgency=medium
+
+  * Fix some tests.
+
+ -- David Steele <steele@debian.org>  Mon, 11 Apr 2022 09:53:30 -0400
+
+gnome-gmail (2.9-2) unstable; urgency=medium
+
+  * Add build dependency for setuptools.
+
+ -- David Steele <steele@debian.org>  Sun, 10 Apr 2022 22:06:58 -0400
+
+gnome-gmail (2.9-1) unstable; urgency=medium
+
+  * Add --user option.
+  * Remove distutils (Closes: #1009093).
+
+ -- David Steele <steele@debian.org>  Sun, 10 Apr 2022 16:28:31 -0400
+
+gnome-gmail (2.8-1) unstable; urgency=medium
+
+  * Fix the Python 3.9 handling of tab and new line.
+  * Fix watch, and update signing key.
+
+ -- David Steele <steele@debian.org>  Wed, 08 Sep 2021 16:14:02 -0400
+
+gnome-gmail (2.7-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from old 10 to 12.
+  * Add missing colon in closes line.
+  * Re-export upstream signing key without extra signatures.
+  * Set fields Upstream-Contact in debian/copyright.
+  * Remove obsolete fields Name, Contact from debian/upstream/metadata.
+  * Wrap long lines in changelog entries: 1.7.3.
+  * Set upstream metadata fields: Bug-Submit.
+
+ -- David Steele <steele@debian.org>  Thu, 03 Dec 2020 10:46:14 -0500
+
 gnome-gmail (2.7-1) unstable; urgency=medium
 
   * Use "localhost" instead of 127.0.0.1 for OAuth2 redirect.
@@ -73,7 +120,7 @@ gnome-gmail (2.5.1-1) unstable; urgency=medium
 
 gnome-gmail (2.5-2) unstable; urgency=medium
 
-  * Remove Python 2 tests from autopkgtest. 
+  * Remove Python 2 tests from autopkgtest.
 
  -- David Steele <steele@debian.org>  Mon, 09 Oct 2017 22:25:29 -0400
 
@@ -144,7 +191,7 @@ gnome-gmail (2.2-1) unstable; urgency=medium
     - Chrome launches in a tabless 'app' window.
 
  -- David Steele <steele@debian.org>  Mon, 27 Jun 2016 16:20:00 -0400
- 
+
 gnome-gmail (2.1-1) UNRELEASED; urgency=medium
 
   * Update to gtk-update-icon-cache for icon update (Closes: #825451).
@@ -228,7 +275,7 @@ gnome-gmail (1.9.2-1) unstable; urgency=low
 
 gnome-gmail (1.9.1-1) unstable; urgency=low
 
-  * Fix a crash if no initial OAuth access token found (Closes #786371).
+  * Fix a crash if no initial OAuth access token found (Closes: #786371).
 
  -- David Steele <dsteele@gmail.com>  Thu, 21 May 2015 06:49:30 -0400
 
@@ -297,7 +344,8 @@ gnome-gmail (1.7.3) unstable; urgency=low
 
   * Switch to native package as debian/ is maintained upstream
   * Add libgconf2-dev, autotools-dev, and dh-autoreconf to Build-Depends
-  * Migrate to simplified dh based debian/rules (these last two changes fixes a FTBFS)
+  * Migrate to simplified dh based debian/rules (these last two changes fixes a
+    FTBFS)
   * Include the non-Debian changelog in the package
 
  -- Michael R. Crusoe <michael.crusoe@gmail.com>  Tue, 29 Mar 2011 13:40:36 -0700
@@ -326,5 +374,3 @@ gnome-gmail (1.7-1) unstable; urgency=low
   * Minor bug fixes
 
  -- David Steele <daves@users.sourceforge.net>  Sun, 17 Oct 2010 21:53:12 -0400
-
-
