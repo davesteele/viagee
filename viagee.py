@@ -10,49 +10,47 @@ This script accepts an argument of a mailto url, and calls up an appropriate
 GMail web page to handle the directive. It is intended to support GMail as a
 GNOME Preferred Email application """
 
-import sys
-import webbrowser
+import argparse
+import json
+import locale
+import mimetypes
 import os
 import os.path
-import re
-import textwrap
-import locale
-import string
-import json
-import mimetypes
 import random
-import time
-import subprocess
+import re
 import shlex
+import string
+import subprocess
+import sys
+import textwrap
+import time
 import unicodedata
-import argparse
+import urllib
+import webbrowser
 from contextlib import contextmanager
-from http.server import HTTPServer, BaseHTTPRequestHandler
-
 from email import encoders
 from email.mime.audio import MIMEAudio
 from email.mime.base import MIMEBase
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
-from six.moves import urllib
-from six.moves.configparser import ConfigParser
+from http.server import BaseHTTPRequestHandler, HTTPServer
 
 import gi
-from gi.repository import Gio       # noqa
+from gi.repository import Gio  # noqa
+from six.moves.configparser import ConfigParser
 
 gi.require_version('Gtk', '3.0')
-from gi.repository import Gtk       # noqa
+from gi.repository import Gtk  # noqa
 
 gi.require_version('Secret', '1')
-from gi.repository import Secret    # noqa
+from gi.repository import Secret  # noqa
 
-gi.require_version('Notify', '0.7')
-from gi.repository import Notify    # noqa
+gi.require_version('Notify', '0.8')
+from gi.repository import Notify  # noqa
 
 gi.require_version('Wnck', '3.0')
-from gi.repository import Wnck      # noqa
+from gi.repository import Wnck  # noqa
 
 _ = locale.gettext
 locale.bindtextdomain("viagee", "/usr/share/locale")
@@ -100,11 +98,15 @@ def set_as_default_mailer():
             if app.get_id() == "viagee.desktop":
                 app.set_as_default_for_type("x-scheme-handler/mailto")
     elif environ == 'KDE':
-        cfgpath = os.path.expanduser('~/.kde/share/config/emaildefaults')
-        with open(cfgpath, 'r') as cfp:
-            cfglines = cfp.readlines()
+        cfgpath = os.path.expanduser('/usr/share/applications/defaults.list')
+        try:
+            with open(cfgpath, 'r') as cfp:
+                cfglines = cfp.readlines()
+        except FileNotFoundError:
+            cfglines = []
 
-        cfglines = [x for x in cfglines if 'EmailClient' not in x]
+        cfglines = [x for x in cfglines if 'EmailClient' not in x] or \
+                   ['[PROFILE_Default]']
 
         outlines = []
         for line in cfglines:
@@ -129,9 +131,12 @@ def is_default_mailer():
         except AttributeError:
             pass
     elif environ == 'KDE':
-        cfgpath = os.path.expanduser('~/.kde/share/config/emaildefaults')
-        with open(cfgpath, 'r') as cfp:
-            returnvalue = 'viagee' in cfp.read()
+        cfgpath = os.path.expanduser('/usr/share/applications/defaults.list')
+        try:
+            with open(cfgpath, 'r') as cfp:
+                returnvalue = 'viagee' in cfp.read()
+        except FileNotFoundError:
+            pass
 
     return returnvalue
 
@@ -183,6 +188,7 @@ def customize_browser(browser):
     return browser
 
 
+
 class GMOauth():
     """oauth mechanism per
           https://developers.google.com/accounts/docs/OAuth2InstalledApp
@@ -201,10 +207,7 @@ class GMOauth():
 
 
     def get_urn(self):
-        if Wnck.Screen.get_default():
-            return "urn:ietf:wg:oauth:2.0:oob"
-        else:
-            return "http://localhost:%d/" % oauthport
+        return "http://localhost:%d/" % oauthport
 
 
     def get_code(self, login_hint):
@@ -261,6 +264,7 @@ class GMOauth():
             return RequestHandler.code
 
         raise GGError(_("Timeout getting OAuth authentication"))
+
 
     def get_token_dict(self, code):
 
@@ -456,6 +460,8 @@ class GMailAPI():
             htmlbody = re.sub("&nbsp; &nbsp;", "&nbsp;&nbsp;&nbsp;", htmlbody)
 
         htmlbody = re.sub("\n", "<br>\n", htmlbody)
+        htmlbody = re.sub("CARRIAGE_RETURN", "<br>\n", htmlbody)
+        htmlbody = re.sub("TAB", "&emsp;", htmlbody)
 
         htmlhdr = "<html>\n<head>\n</head>\n<body>\n"
         htmltail = "\n</body>\n</html>"
@@ -546,6 +552,9 @@ class GMailURL():
         """ Convert a mailto: reference to a dictionary containing the
         message parts """
         # get the path string from the 'possible' mailto url
+        self.mailto_url = re.sub("\t", "TAB", self.mailto_url)
+        self.mailto_url = re.sub("%09", "TAB", self.mailto_url)
+        self.mailto_url = re.sub("\n", "CARRIAGE_RETURN", self.mailto_url)
         usplit = urllib.parse.urlsplit(self.mailto_url, "mailto")
 
         path = usplit.path
@@ -862,7 +871,7 @@ def do_preferred(glade_file, config):
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Send mail via the Gmail API and the browser interface.",
-        usage="%(prog)s [-h|-q|[-s] <mailto>]",
+        usage="%(prog)s [-h|-q|[-s [-u] <mailto>]",
         epilog=textwrap.dedent("""\
             The viagee utility will create an email message from the
             mailto argument, upload it to Gmail using the Gmail API, and open
@@ -900,6 +909,12 @@ def parse_args():
         metavar="file",
         default=None,
         help="upload an RFC822-formatted message",
+    )
+
+    parser.add_argument(
+        '-u', '--user',
+        default=None,
+        help="User \"from\" email"
     )
 
     args = parser.parse_args()
@@ -978,7 +993,9 @@ def main():
 
     from_address = None
     message = None
-    if args.rfc822:
+    if args.user:
+        from_address = args.user
+    elif args.rfc822:
         message = open(args.rfc822, 'r').read()
         from_address = fromFromMessage(message)
     else:
