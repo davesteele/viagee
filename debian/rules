@@ -5,6 +5,8 @@ export PYBUILD_NAME=viagee
 # Too many Build-Depends required to support test
 export PYBUILD_DISABLE=test
 
+export PYBUILD_DESTDIR=debian/viagee
+
 
 PKD = $(word 1,$(abspath $(dir $(MAKEFILE_LIST))))
 
