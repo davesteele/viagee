@@ -25,7 +25,7 @@ import sys
 import textwrap
 import time
 import unicodedata
-import urllib
+import urllibi.request
 import webbrowser
 from contextlib import contextmanager
 from email import encoders
