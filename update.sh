@@ -2,6 +2,8 @@
 
 cp ../build-area/viagee*deb deb/
 cp ../viagee*deb deb/
+cp ../build-area/gnome-gmail*deb deb/
+cp ../gnome-gmail*deb deb/
 
 cd deb
 echo MD5Sum >checksums.txt
@@ -28,12 +30,3 @@ git checkout master -- po
 git reset HEAD po
 ./postats >postats.json
 rm -rf po messages.mo
-
-
-cd repo
-./clearit
-./addit
-cd ..
-
-
-

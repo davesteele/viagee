@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import os
 import subprocess
@@ -11,7 +11,7 @@ lcodes = sorted([x[:-3] for x in os.listdir('po') if x[-3:] == ".po"])
 
 def get_lang(lcode):
     cmd = "isoquery -i 639-2 " + lcode[0:2]
-    out = subprocess.check_output(cmd.split()).strip()
+    out = subprocess.check_output(cmd.split()).strip().decode()
 
     longname = out.split('\t')[3]
     shortname = longname.split()[0].strip(',;')
@@ -23,10 +23,10 @@ def percent_done(lcode):
     out = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
 
     tokens = out.split()
-    translated = string.atoi(tokens[0])
+    translated = int(tokens[0])
 
     try:
-        untranslated = string.atoi(tokens[3])
+        untranslated = int(tokens[3])
     except IndexError:
         untranslated = 0
 
@@ -54,4 +54,4 @@ for lcode in lcodes:
 
 stats = sorted(stats, key=lambda x: x['language'])
 
-print json.dumps({'polist': stats}, sort_keys=True, indent=4)
+print(json.dumps({'polist': stats}, sort_keys=True, indent=4))
