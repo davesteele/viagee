@@ -4,8 +4,8 @@ import viagee
 
 def test_config_fixture(config_fxt):
     config = viagee.GgConfig(
-                fpath="~/.config/gnome-gmail/gnome-gmail.conf",
-                section='gnome-gmail',
+                fpath="~/.config/viagee/viagee.conf",
+                section='viagee',
                 initvals={
                     'suppress_preferred': '0',
                     'suppress_account_selection': '0',

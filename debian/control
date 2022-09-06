@@ -9,9 +9,9 @@ Build-Depends: dh-python,
                debhelper-compat (= 13),
 Standards-Version: 4.1.2
 Rules-Requires-Root: no
-Vcs-Browser: https://github.com/davesteele/gnome-gmail/tree/debian
-Vcs-Git: https://github.com/davesteele/gnome-gmail.git -b debian
-Homepage: https://davesteele.github.io/gnome-gmail/
+Vcs-Browser: https://github.com/davesteele/viagee/tree/debian
+Vcs-Git: https://github.com/davesteele/viagee.git -b debian
+Homepage: https://davesteele.github.io/viagee/
 
 Package: viagee
 Architecture: all
