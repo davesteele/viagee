@@ -1,183 +1,183 @@
 {
     "polist": [
         {
-            "code": "hy", 
-            "language": "Armenian", 
-            "percent": 66, 
+            "code": "hy",
+            "language": "Armenian",
+            "percent": 66,
             "translator": "Serj Safarian "
-        }, 
+        },
         {
-            "code": "zh_CN", 
-            "language": "Chinese", 
-            "percent": 0, 
+            "code": "zh_CN",
+            "language": "Chinese",
+            "percent": 0,
             "translator": "Lele Long "
-        }, 
+        },
         {
-            "code": "zh_TW", 
-            "language": "Chinese", 
-            "percent": 71, 
+            "code": "zh_TW",
+            "language": "Chinese",
+            "percent": 71,
             "translator": "Po-Chun Huang "
-        }, 
+        },
         {
-            "code": "hr", 
-            "language": "Croatian", 
-            "percent": 71, 
+            "code": "hr",
+            "language": "Croatian",
+            "percent": 71,
             "translator": "kvaju "
-        }, 
+        },
         {
-            "code": "cs", 
-            "language": "Czech", 
-            "percent": 75, 
+            "code": "cs",
+            "language": "Czech",
+            "percent": 75,
             "translator": "Kuvaly [LCT] "
-        }, 
+        },
         {
-            "code": "et", 
-            "language": "Estonian", 
-            "percent": 4, 
+            "code": "et",
+            "language": "Estonian",
+            "percent": 4,
             "translator": "lyyser "
-        }, 
+        },
         {
-            "code": "fr", 
-            "language": "French", 
-            "percent": 95, 
+            "code": "fr",
+            "language": "French",
+            "percent": 95,
             "translator": "Mathieu LEFEBVRE Mathdabomb "
-        }, 
+        },
         {
-            "code": "de", 
-            "language": "German", 
-            "percent": 81, 
+            "code": "de",
+            "language": "German",
+            "percent": 81,
             "translator": "Mauro Sbicego "
-        }, 
+        },
         {
-            "code": "el", 
-            "language": "Greek", 
-            "percent": 80, 
+            "code": "el",
+            "language": "Greek",
+            "percent": 80,
             "translator": ""
-        }, 
+        },
         {
-            "code": "hu", 
-            "language": "Hungarian", 
-            "percent": 83, 
+            "code": "hu",
+            "language": "Hungarian",
+            "percent": 83,
             "translator": "\u00dar Bal\u00e1zs "
-        }, 
+        },
         {
-            "code": "id", 
-            "language": "Indonesian", 
-            "percent": 77, 
+            "code": "id",
+            "language": "Indonesian",
+            "percent": 77,
             "translator": "dhardiputra "
-        }, 
+        },
         {
-            "code": "it", 
-            "language": "Italian", 
-            "percent": 86, 
+            "code": "it",
+            "language": "Italian",
+            "percent": 86,
             "translator": "Massimo Branchini "
-        }, 
+        },
         {
-            "code": "ja", 
-            "language": "Japanese", 
-            "percent": 4, 
+            "code": "ja",
+            "language": "Japanese",
+            "percent": 4,
             "translator": "bigriver9 "
-        }, 
+        },
         {
-            "code": "ms", 
-            "language": "Malay", 
-            "percent": 77, 
+            "code": "ms",
+            "language": "Malay",
+            "percent": 77,
             "translator": "abuyop "
-        }, 
+        },
         {
-            "code": "fa", 
-            "language": "Persian", 
-            "percent": 13, 
+            "code": "fa",
+            "language": "Persian",
+            "percent": 13,
             "translator": "Danial Behzadi "
-        }, 
+        },
         {
-            "code": "pl", 
-            "language": "Polish", 
-            "percent": 95, 
+            "code": "pl",
+            "language": "Polish",
+            "percent": 95,
             "translator": "Piotr Dr\u0105g "
-        }, 
+        },
         {
-            "code": "pt", 
-            "language": "Portuguese", 
-            "percent": 75, 
+            "code": "pt",
+            "language": "Portuguese",
+            "percent": 75,
             "translator": "Almufadado "
-        }, 
+        },
         {
-            "code": "pt_BR", 
-            "language": "Portuguese", 
-            "percent": 81, 
+            "code": "pt_BR",
+            "language": "Portuguese",
+            "percent": 81,
             "translator": "Pablo Almeida "
-        }, 
+        },
         {
-            "code": "ps", 
-            "language": "Pushto", 
-            "percent": 9, 
+            "code": "ps",
+            "language": "Pushto",
+            "percent": 9,
             "translator": "Said Marjan Zazai "
-        }, 
+        },
         {
-            "code": "ro", 
-            "language": "Romanian", 
-            "percent": 75, 
+            "code": "ro",
+            "language": "Romanian",
+            "percent": 75,
             "translator": "Daniel \u0218erb\u0103nescu "
-        }, 
+        },
         {
-            "code": "ru", 
-            "language": "Russian", 
-            "percent": 81, 
+            "code": "ru",
+            "language": "Russian",
+            "percent": 81,
             "translator": "cdrw winiks1@gmail.com\\n\"\n"
-        }, 
+        },
         {
-            "code": "sr", 
-            "language": "Serbian", 
-            "percent": 4, 
+            "code": "sr",
+            "language": "Serbian",
+            "percent": 4,
             "translator": "\u041c\u0438\u0440\u043e\u0441\u043b\u0430\u0432 \u041d\u0438\u043a\u043e\u043b\u0438\u045b "
-        }, 
+        },
         {
-            "code": "si", 
-            "language": "Sinhala", 
-            "percent": 0, 
+            "code": "si",
+            "language": "Sinhala",
+            "percent": 0,
             "translator": ""
-        }, 
+        },
         {
-            "code": "es", 
-            "language": "Spanish", 
-            "percent": 77, 
+            "code": "es",
+            "language": "Spanish",
+            "percent": 77,
             "translator": "Alberto Dom\u00ednguez "
-        }, 
+        },
         {
-            "code": "sv", 
-            "language": "Swedish", 
-            "percent": 77, 
+            "code": "sv",
+            "language": "Swedish",
+            "percent": 77,
             "translator": "__a "
-        }, 
+        },
         {
-            "code": "ta", 
-            "language": "Tamil", 
-            "percent": 71, 
+            "code": "ta",
+            "language": "Tamil",
+            "percent": 71,
             "translator": "Jackseen Jeyaluck "
-        }, 
+        },
         {
-            "code": "tr", 
-            "language": "Turkish", 
-            "percent": 71, 
+            "code": "tr",
+            "language": "Turkish",
+            "percent": 71,
             "translator": ""
-        }, 
+        },
         {
-            "code": "ug", 
-            "language": "Uighur", 
-            "percent": 0, 
+            "code": "ug",
+            "language": "Uighur",
+            "percent": 0,
             "translator": ""
-        }, 
+        },
         {
-            "code": "uk", 
-            "language": "Ukrainian", 
-            "percent": 71, 
+            "code": "uk",
+            "language": "Ukrainian",
+            "percent": 71,
             "translator": ""
-        }, 
+        },
         {
-            "code": "vi", 
-            "language": "Vietnamese", 
-            "percent": 71, 
+            "code": "vi",
+            "language": "Vietnamese",
+            "percent": 71,
             "translator": "L\u00ea Tr\u01b0\u1eddng An "
         }
     ]

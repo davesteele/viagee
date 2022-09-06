@@ -1,5 +1,5 @@
 <!-- Creator     : groff version 1.22.4 -->
-<!-- CreationDate: Mon Dec  9 22:42:05 2019 -->
+<!-- CreationDate: Mon Sep  5 16:18:02 2022 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -46,7 +46,9 @@ Integrate GMail into the GNOME desktop</p>
 
 <p style="margin-left:11%; margin-top: 1em"><b>viagee</b>
 [<b>-r</b> <i>file</i>|<i>&lt;mailto-URL&gt;</i>]
-[<b>--send</b>]</p>
+[<b>--send</b>] [<b>-u</b>
+<i>&lt;user-email&gt;</i>|<b>--user</b>
+<i>&lt;user-email&gt;</i>]</p>
 
 <h2>DESCRIPTION
 <a name="DESCRIPTION"></a>
@@ -76,8 +78,13 @@ supplied, a default GMail page is opened. <b><br>
 
 <p style="margin-left:22%;">send immediately</p>
 
-<p style="margin-left:11%;"><b>-r</b> <i>file</i><b>,
---rfc</b> <i>file</i></p>
+<p style="margin-left:11%;"><b>-u, --user</b></p>
+
+<p style="margin-left:22%;">specify the &rsquo;from&rsquo;
+address, overriding the stored choice</p>
+
+<p style="margin-left:11%; margin-top: 1em"><b>-r</b>
+<i>file</i><b>, --rfc</b> <i>file</i></p>
 
 <p style="margin-left:22%;">send the RFC822-formatted file
 <i>file</i></p>
