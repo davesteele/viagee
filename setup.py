@@ -77,7 +77,7 @@ setup(
     author_email='dsteele@gmail.com',
     url='https://davesteele.github.io/viagee/',
     scripts=['viagee'],
-    requires=['gi', 'six'],
+    requires=['six'],
     data_files=[
         ('share/icons/hicolor/16x16/apps', ['icons/16x16/viagee.png']),
 #        ('share/icons/hicolor/24x24/apps', ['icons/24x24/viagee.png']),

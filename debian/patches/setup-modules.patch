@@ -1,0 +1,10 @@
+--- a/setup.py
++++ b/setup.py
+@@ -70,6 +70,7 @@
+ 
+ 
+ setup(
++    py_modules=['viagee'],
+     name='viagee',
+     version='3.3',
+     description='support for Gmail as the preferred GNOME email application',
