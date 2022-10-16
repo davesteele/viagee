@@ -11,16 +11,6 @@ class MyTestException(Exception):
     pass
 
 
-@patch('viagee.sys.exit', side_effect=MyTestException)
-def test_main_quick(default_mailer_fxt, config_fxt, monkeypatch):
-    monkeypatch.setattr('viagee.sys.argv', ['prog', '-q'])
-
-    with pytest.raises(MyTestException):
-        viagee.main()
-
-    assert viagee.sys.exit.calledwith(0)
-
-
 def b64grep(str, text):
     try:
         b64tst = base64.b64encode(str.encode()) in text.encode()
