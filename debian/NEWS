@@ -1,0 +1,7 @@
+viagee (3.4-1) unstable; urgency=medium
+
+  The gnome-gmail package has been replaced by viagee. The gnome-gmail
+  application currently installed by this package has been neutered. Run
+  "viagee" to configure it's replacement.
+
+ -- David Steele <steele@debian.org>  Wed, 19 Oct 2022 15:40:14 -0400

@@ -1,8 +1,8 @@
-viagee (3.4-1) UNRELEASED; urgency=medium
+viagee (3.4-1) unstable; urgency=medium
 
   * Fix dependency problem with viagee/gnome-gmail.
 
- -- David Steele <steele@debian.org>  Wed, 19 Oct 2022 15:30:05 -0400
+ -- David Steele <steele@debian.org>  Wed, 19 Oct 2022 15:43:27 -0400
 
 viagee (3.0-1) unstable; urgency=medium
 
