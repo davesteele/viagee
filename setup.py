@@ -71,7 +71,8 @@ def polist():
 
 setup(
     name='viagee',
-    version='3.3',
+    py_modules=['viagee'],
+    version='3.4',
     description='support for Gmail as the preferred GNOME email application',
     author='David Steele',
     author_email='dsteele@gmail.com',

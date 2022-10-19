@@ -31,6 +31,7 @@ etc.</_p>
 </screenshots>
 <releases>
     <!-- Get timestamp with 'date +%s' -->
+    <release version="3.4" timestamp="1665929987"></release>
     <release version="3.3" timestamp="1665800321"></release>
     <release version="3.0" timestamp="1575863571"></release>
 </releases>
