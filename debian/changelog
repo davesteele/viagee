@@ -1,4 +1,4 @@
-viagee (3.4-2) unstable; urgency=medium
+viagee (3.5) unstable; urgency=medium
 
   * Repeated upload to address Debian policy problem.
     Viagee is in the repo, so a binary upload is rejected. I tried a source

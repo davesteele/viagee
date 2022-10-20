@@ -1,4 +1,4 @@
-viagee (3.4-2) UNRELEASED; urgency=medium
+viagee (3.5) UNRELEASED; urgency=medium
 
   The gnome-gmail package has been replaced by viagee. The gnome-gmail
   application currently installed by this package has been neutered. Run
