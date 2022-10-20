@@ -1,13 +1,13 @@
-viagee (3.5) unstable; urgency=medium
+viagee (3.6-1) unstable; urgency=medium
 
   * Repeated upload to address Debian policy problem.
     Viagee is in the repo, so a binary upload is rejected. I tried a source
     upload previously, but that was rejected because gnome-gmail is not in the
     repo. Trying source again.
 
- -- David Steele <steele@debian.org>  Thu, 20 Oct 2022 15:46:00 -0400
+ -- David Steele <steele@debian.org>  Thu, 20 Oct 2022 15:56:49 -0400
 
-viagee (3.4-1) unstable; urgency=medium
+viagee (3.5-2) unstable; urgency=medium
 
   * Fix dependency problem with viagee/gnome-gmail.
 
