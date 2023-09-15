@@ -847,8 +847,14 @@ class Oauth2Keyring():
 def do_preferred(glade_file, config):
 
     class Handler:
+        def __init__(self, dlg):
+            self.dlg = dlg
+
         def onCancelClicked(self, button):
-            Gtk.main_quit()
+            self.dlg.hide()
+
+        def onYesClicked(self, button):
+            self.dlg.hide()
 
     dlgid = "preferred_app_dialog"
 
@@ -856,10 +862,11 @@ def do_preferred(glade_file, config):
     builder.set_translation_domain("viagee")
     builder.add_objects_from_file(glade_file, (dlgid, ))
 
-    hdlr = Handler()
+    dlg = builder.get_object(dlgid)
+    hdlr = Handler(dlg)
     builder.connect_signals(hdlr)
 
-    response = builder.get_object(dlgid).run()
+    response = dlg.run()
 
     preferred_setting = builder.get_object("check_dont_ask_again").get_active()
     config.set_bool('suppress_preferred', preferred_setting)

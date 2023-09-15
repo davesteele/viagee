@@ -123,6 +123,7 @@
                 <property name="receives-default">True</property>
                 <property name="has-tooltip">True</property>
                 <property name="use-stock">True</property>
+                <signal name="clicked" handler="onYesClicked" swapped="no"/>
               </object>
               <packing>
                 <property name="expand">False</property>
