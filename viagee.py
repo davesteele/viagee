@@ -660,6 +660,12 @@ class GMailURL():
 
         return(gmailurl)
 
+    def attachments(self):
+        try:
+            return self.mail_dict["attach"]
+        except KeyError:
+            return []
+
 
 def getFromAddress(last_address, config, gladefile):
     class Handler:
@@ -876,6 +882,42 @@ def do_preferred(glade_file, config):
         set_as_default_mailer()
 
 
+def attach_ok(glade_file, path):
+
+    class Handler:
+        def __init__(self, dlg, path):
+            self.dlg = dlg
+            self.path = path
+
+        def onCancelClicked(self, button):
+            self.dlg.hide()
+            self.dlg.destroy()
+
+        def onOKClicked(self, button):
+            self.dlg.hide()
+
+    dlgid = "attachment_confirm_dialog"
+
+    builder = Gtk.Builder()
+    builder.set_translation_domain("viagee")
+    builder.add_objects_from_file(glade_file, (dlgid, ))
+
+    txt_obj = builder.get_object("attachment_name")
+    txt_obj.set_text(path)
+
+
+    dlg = builder.get_object(dlgid)
+    hdlr = Handler(dlg, path)
+    builder.connect_signals(hdlr)
+
+    response = dlg.run()
+
+#     dlg.hide()
+#     dlg.destroy()
+
+    return response
+
+
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Send mail via the Gmail API and the browser interface.",
@@ -1014,6 +1056,11 @@ def main():
 
     try:
         gm_url = GMailURL(args.mailto, from_address, message)
+
+        for path in gm_url.attachments():
+            if attach_ok(glade_file, path) != 1:
+                raise GGError(_("User aborted"))
+
         gmailurl = gm_url.gmail_url(args.send)
     except GGError as gerr:
         notice = Notify.Notification.new(
