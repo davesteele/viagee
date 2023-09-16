@@ -599,6 +599,7 @@ class GMailURL():
 
         if 'attachment' in outdict:
             outdict['attach'] = outdict['attachment']
+            del outdict['attachment']
 
         return(outdict)
 
