@@ -599,6 +599,7 @@ class GMailURL():
 
         if 'attachment' in outdict:
             outdict['attach'] = outdict['attachment']
+            del outdict['attachment']
 
         return(outdict)
 
@@ -658,6 +659,12 @@ class GMailURL():
             gmailurl = self.api_gmail_url(send)
 
         return(gmailurl)
+
+    def attachments(self):
+        try:
+            return self.mail_dict["attach"]
+        except KeyError:
+            return []
 
 
 def getFromAddress(last_address, config, gladefile):
@@ -847,8 +854,14 @@ class Oauth2Keyring():
 def do_preferred(glade_file, config):
 
     class Handler:
+        def __init__(self, dlg):
+            self.dlg = dlg
+
         def onCancelClicked(self, button):
-            Gtk.main_quit()
+            self.dlg.hide()
+
+        def onYesClicked(self, button):
+            self.dlg.hide()
 
     dlgid = "preferred_app_dialog"
 
@@ -856,16 +869,53 @@ def do_preferred(glade_file, config):
     builder.set_translation_domain("viagee")
     builder.add_objects_from_file(glade_file, (dlgid, ))
 
-    hdlr = Handler()
+    dlg = builder.get_object(dlgid)
+    hdlr = Handler(dlg)
     builder.connect_signals(hdlr)
 
-    response = builder.get_object(dlgid).run()
+    response = dlg.run()
 
     preferred_setting = builder.get_object("check_dont_ask_again").get_active()
     config.set_bool('suppress_preferred', preferred_setting)
 
     if response == 1:
         set_as_default_mailer()
+
+
+def attach_ok(glade_file, path):
+
+    class Handler:
+        def __init__(self, dlg, path):
+            self.dlg = dlg
+            self.path = path
+
+        def onCancelClicked(self, button):
+            self.dlg.hide()
+            self.dlg.destroy()
+
+        def onOKClicked(self, button):
+            self.dlg.hide()
+
+    dlgid = "attachment_confirm_dialog"
+
+    builder = Gtk.Builder()
+    builder.set_translation_domain("viagee")
+    builder.add_objects_from_file(glade_file, (dlgid, ))
+
+    txt_obj = builder.get_object("attachment_name")
+    txt_obj.set_text(path)
+
+
+    dlg = builder.get_object(dlgid)
+    hdlr = Handler(dlg, path)
+    builder.connect_signals(hdlr)
+
+    response = dlg.run()
+
+#     dlg.hide()
+#     dlg.destroy()
+
+    return response
 
 
 def parse_args():
@@ -1006,6 +1056,11 @@ def main():
 
     try:
         gm_url = GMailURL(args.mailto, from_address, message)
+
+        for path in gm_url.attachments():
+            if attach_ok(glade_file, path) != 1:
+                raise GGError(_("User aborted"))
+
         gmailurl = gm_url.gmail_url(args.send)
     except GGError as gerr:
         notice = Notify.Notification.new(
