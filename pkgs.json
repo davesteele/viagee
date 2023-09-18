@@ -1,12 +1,12 @@
 {
     "all_pkgs": [
-        "viagee_3.7-1_all.deb",
-        "gnome-gmail_3.7-1_all.deb",
+        "viagee_3.7.1-1_all.deb",
+        "gnome-gmail_3.7.1-1_all.deb",
         "viagee_3.0-1_all.deb",
         "gnome-gmail_3.0-1_all.deb"
     ],
     "latest_pkgs": [
-        "viagee_3.7-1_all.deb",
-        "gnome-gmail_3.7-1_all.deb"
+        "viagee_3.7.1-1_all.deb",
+        "gnome-gmail_3.7.1-1_all.deb"
     ]
 }
