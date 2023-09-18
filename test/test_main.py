@@ -42,6 +42,7 @@ def spy_decorator(method_to_decorate):
 )
 @patch('viagee.browser', Mock())
 @patch('viagee.GMailAPI.upload_mail', Mock(return_value='1'))
+@patch('viagee.attach_ok', Mock(return_value = 1))
 def test_main(default_mailer_fxt, config_fxt, keyring_fxt,
               notify_fxt, web_fxt, oauth_fxt,
               monkeypatch, su, bcc, cc, attach, body):
