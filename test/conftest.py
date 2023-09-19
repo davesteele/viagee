@@ -3,7 +3,6 @@ import pytest
 from mock import Mock
 import tempfile
 import os
-import urllib
 
 
 @pytest.fixture()
