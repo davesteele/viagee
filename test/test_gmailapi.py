@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-
-from six.moves import urllib
+import urllib.parse
 
 import viagee
 
