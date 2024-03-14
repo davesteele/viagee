@@ -27,8 +27,6 @@ etc.</_p>
 <developer_name>David Steele</developer_name>
 <update_contact>dsteele_AT_gmail.com</update_contact>
 <translation type="gettext">viagee</translation>
-<screenshots>
-</screenshots>
 <releases>
     <!-- Get timestamp with 'date +%s' -->
     <release version="3.7.2" timestamp="1710438655"></release>
