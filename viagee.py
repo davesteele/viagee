@@ -27,6 +27,7 @@ import time
 import unicodedata
 import urllib.request
 import webbrowser
+from configparser import ConfigParser
 from contextlib import contextmanager
 from email import encoders
 from email.mime.audio import MIMEAudio
@@ -38,7 +39,6 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 import gi
 from gi.repository import Gio  # noqa
-from six.moves.configparser import ConfigParser
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk  # noqa

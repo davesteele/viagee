@@ -72,13 +72,13 @@ def polist():
 setup(
     name='viagee',
     py_modules=['viagee'],
-    version='3.7.1',
+    version='3.7.2',
     description='support for Gmail as the preferred GNOME email application',
     author='David Steele',
     author_email='dsteele@gmail.com',
     url='https://davesteele.github.io/viagee/',
     scripts=['viagee'],
-    requires=['six'],
+    requires=[],
     data_files=[
         ('share/icons/hicolor/16x16/apps', ['icons/16x16/viagee.png']),
 #        ('share/icons/hicolor/24x24/apps', ['icons/24x24/viagee.png']),
