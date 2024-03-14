@@ -1,3 +1,10 @@
+viagee (3.7.2-1) unstable; urgency=medium
+
+  * Remove 'six'.
+  * Accept older libnotify4 version.
+
+ -- David Steele <steele@debian.org>  Thu, 14 Mar 2024 13:47:24 -0400
+
 viagee (3.7.1-1) unstable; urgency=medium
 
   * Fix CI Tests for attachment confirmation.
