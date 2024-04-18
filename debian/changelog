@@ -1,3 +1,9 @@
+viagee (3.7.2-2) unstable; urgency=medium
+
+  * Remove autopkgtest distutils dependency (Closes: #1066000)
+
+ -- David Steele <steele@debian.org>  Thu, 18 Apr 2024 11:05:32 -0400
+
 viagee (3.7.2-1) unstable; urgency=medium
 
   * Remove 'six'.
