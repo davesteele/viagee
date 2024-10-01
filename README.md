@@ -1,6 +1,8 @@
 
 [![Packaging status](https://repology.org/badge/tiny-repos/viagee.svg)](https://repology.org/metapackage/viagee)
 
+Notice - 2024-10-01: Viagee is DISABLED. Google has revoked the app's Verified status, rendering it unusable.
+
 ## Viagee
 
 This is part of the Viagee project.
